@@ -40,12 +40,22 @@ style={{backgroundColor : color }}
       onClick={()=>setColor('grey')}
       className='outline-none px-4 py-1 rounded-full text-black shadow-lg'
       style={{backgroundColor : 'grey' }}
-      >grey</button>
+      >Grey</button>
       <button
       onClick={()=>setColor('pink')}
       className='outline-none px-4 py-1 rounded-full text-black shadow-lg'
       style={{backgroundColor : 'pink' }}
       >Pink</button>
+      <button
+      onClick={()=>setColor('white')}
+      className='outline-none px-4 py-1 rounded-full text-black shadow-lg'
+      style={{backgroundColor : 'white' }}
+      >White</button>
+      <button
+      onClick={()=>setColor('black')}
+      className='outline-none px-4 py-1 rounded-full text-white shadow-lg'
+      style={{backgroundColor : 'black' }}
+      >Black</button>
     </div>
   </div>
 </div>
