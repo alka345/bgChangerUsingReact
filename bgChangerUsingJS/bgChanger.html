@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BG Changer</title>
+</head>
+<style>
+
+.backGround{
+height: 100vh;
+width: 100vw;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border: none;
+    border-radius: 20px;
+}
+#blue{
+    background-color: blue;
+}
+#red{
+    background-color: red;
+}
+#green{
+    background-color: green;
+}
+</style>
+<body>
+    <div class="backGround">
+        
+        <button class="box" id="blue">Blue</button>
+        <button class="box" id="red">Red</button>
+        <button class="box" id="green">Green</button>
+    </div>
+   <script>
+    const boxes = document.querySelectorAll('.box');
+    const body = document.querySelector('body')
+//loop through each box
+boxes.forEach(function(box){
+box.addEventListener('click',function(e){
+console.log(e);
+console.log(e.target);
+console.log(e.target.id);
+if (e.target.id == 'blue') {
+    body.style.backgroundColor = e.target.id
+   }
+if (e.target.id == 'red') {
+    body.style.backgroundColor = e.target.id
+   }
+if (e.target.id == 'green') {
+    body.style.backgroundColor = e.target.id
+   }
+
+})
+})
+   
+  
+   </script>
+</body>
+</html>
