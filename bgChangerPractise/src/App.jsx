@@ -8,12 +8,13 @@ function App() {
 
   return (
  
-  <div className='w-full h-screen'
+  <div className='w-full h-1/2'
   style={{background : color}}
   >
+    {/* && e.target.removeEventListener() */}
 <div>
 <button
-   onClick={()=>setColor('blue')}
+   onClick={(e)=>setColor('blue') }
    className='bg-blue-800 rounded-full p-10 text-white font-serif' >Blue</button>
   <button 
   onClick={()=>setColor('yellow')}
